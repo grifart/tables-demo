@@ -16,7 +16,7 @@ $someId = Uuid::uuid4();
 /** @var AdvancedTableTable $table */
 $table = $container->getByType(AdvancedTableTable::class);
 
-$row = $table->new($someId, "test", ['test', 'test2']);
+$row = $table->new($someId, "test", ['1', 'test2']);
 $table->save($row);
 
 $fetched = $table->get(AdvancedTablePrimaryKey::from($someId));

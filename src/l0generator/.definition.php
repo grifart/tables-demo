@@ -11,11 +11,13 @@ return definitionOf(ArticleDTO::class, withFields: [
 	'title' => 'string',
 	'content' => 'string',
 	'tags' => Types\listOf('string'),
+	// https://gitlab.grifart.cz/grifart/scaffolder/-/blob/master/readme.md#fields-and-types
 ])
 	->withField('archivedAt', Types\nullable(\DateTime::class))
 	->with(
 		Capabilities\constructorWithPromotedProperties(),
 		Capabilities\getters(),
+		// https://gitlab.grifart.cz/grifart/scaffolder/-/blob/master/readme.md#capabilities
 	);
 
 

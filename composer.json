@@ -10,7 +10,8 @@
         "ramsey/uuid": "^4.7",
         "brick/date-time": "^0.5.1",
         "brick/math": "^0.11.0",
-        "nikic/php-parser": "^4.17"
+        "nikic/php-parser": "^4.17",
+        "phpstan/phpstan": "^1.10"
     },
     "require-dev": {
         "nette/tester": "^2.5"
