@@ -1,0 +1,29 @@
+includes:
+- l0generator/container.neon
+- l1tables/container.neon
+- l2tables/container.neon
+
+extensions:
+	tables: Grifart\Tables\DI\TablesExtension
+	dibi: Dibi\Bridges\Nette\DibiExtension22
+
+# https://github.com/grifart/tables#advanced-types
+#tables:
+#    types:
+#        - App\Tables\MyType
+#        - App\Tables\MyType::decimal(10, 5) # named constructor with parameters
+#        schema.table.column: App\Tables\MyType
+#		- array types
+#		- enum types
+#		- composite types <-> objects
+
+
+
+dibi:
+	driver: postgre
+	host: 127.0.0.1
+	port: 8090
+	username: postgres
+	password: password
+	database: warp-camp-tables-demo
+	debugMode: true

@@ -1,0 +1,29 @@
+{
+    "name": "jkuchar1/grifart-tables-demo",
+    "require": {
+        "php": "^8.2",
+        "grifart/tables": "^0.10.2",
+        "dibi/dibi": "^5.0",
+        "nette/di": "^3.1",
+        "nette/bootstrap": "^3.2",
+        "tracy/tracy": "^2.10",
+        "ramsey/uuid": "^4.7",
+        "brick/date-time": "^0.5.1",
+        "brick/math": "^0.11.0",
+        "nikic/php-parser": "^4.17"
+    },
+    "require-dev": {
+        "nette/tester": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TablesDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jan Kuchař",
+            "email": "honza.kuchar@grifart.cz"
+        }
+    ]
+}

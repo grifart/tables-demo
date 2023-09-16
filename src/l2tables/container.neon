@@ -1,0 +1,9 @@
+services:
+#	- TablesDemo\l2tables\AdvancedTableTable
+
+
+tables:
+	types:
+		- Grifart\Tables\Types\ArrayType::of(
+			Grifart\Tables\Types\TextType::varchar()
+		)
